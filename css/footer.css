@@ -1,0 +1,47 @@
+footer{
+  background-color: #eeeff1;
+  height: 160px;
+  padding: 40px 0 80px 0;
+}
+footer .wrap{   
+  color: #666;
+  font-size: 14px;
+  overflow: hidden;
+}
+footer ul.fnb{    
+  line-height: 1.6;
+  float: left;
+  margin-right: 100px;
+  margin-bottom: 40px;
+}
+footer ul.fnb li{
+    
+}
+footer ul.fnb li a{
+  color: #444;
+}
+footer ul.fnb li a:hover{
+  text-decoration: underline;
+}
+footer address{
+  line-height: 1.6;
+  float: left;
+}
+footer select{
+  float: right;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  border-top: 2px solid #666;
+  background-color: transparent;
+  padding-top: 5px;
+}
+footer select option{
+    
+}
+footer p.copyright{
+  clear: both;
+  border-top: 1px solid #bbb;
+  padding-top: 20px;
+  font-size: 13px;
+}

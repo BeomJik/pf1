@@ -1,0 +1,87 @@
+/* ////////// 상단영역 ////////// */
+header{
+/*! background-color: #eee; */
+  padding-top: 35px;
+  padding-bottom: 35px;
+width: 100%;
+}
+header div.wrap{
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header h1{
+
+}
+header h1 a{
+  background-image: url(../img/hj_logo.jpg);
+  width: 230px;
+  height: 25px;
+  display: block;
+  font-size: 0;
+}
+header ul.gnb{
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+header ul.gnb li{
+  width: 20%;
+  text-align: center;
+}
+header ul.gnb li a{
+  display: block;
+  height: 100%;
+  line-height: 4;
+  font-size: 16px;
+  transition: all 0.5s;
+  border-top: 1px solid #ccc;
+  /*! text-shadow: 1px 1px 1px #a7a7a7; */
+  font-weight: 400;
+}
+header ul.gnb li a:hover{
+  color: #0ea5c9;
+  border-top: 1px solid #0ea5c9;
+}
+header ul.enb{
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -20px;
+  font-size: 11px;
+  /*! gap: 10px; */
+}
+header ul.enb li{
+
+}
+header ul.enb li a{
+  padding: 0 3px;
+  line-height: 0.7;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: all 0.5s;
+}
+header ul.enb li:nth-child(n):hover a{
+  color: #0ea5c9;
+}
+header ul.enb li:nth-child(1) a{
+  color: #000;
+  /*! text-shadow: 1px 1px 1px #a7a7a7; */
+}
+header ul.enb li:nth-child(1) a::after{ /* 역삼각형 아이콘 */
+  content: "▼";
+  margin-left: 6px;
+}
+header ul.enb li:nth-child(2) a{
+  
+  color: #000;
+  text-shadow: 1px 1px 1px #a7a7a7;
+}
+header ul.enb li:nth-child(2) a::before{ /* enb 메뉴 경계선 */
+  content: "I";
+  margin-right: 6px;
+  color: #fff;
+}

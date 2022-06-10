@@ -1,0 +1,106 @@
+/* ////////// 타이틀영역 ////////// */
+#title{
+  height: 600px;
+  background-image: url(https://images.unsplash.com/photo-1549106765-3d312a9425e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 60%;
+  display: flex; /* 자식 정렬 */
+  flex-direction: column; /* 수직 정렬 */
+  justify-content: center; /* 중앙 정렬 */
+  color: #fff;
+}
+#title .wrap{
+  text-align: center;
+  background-color: #00000000;
+  padding-bottom: 32px;
+  transition: all 0.5s;
+}
+#title .wrap:hover{
+  background-color: #00000010;
+   padding: 125px 0;
+  width: 100%;
+}
+#title h2{
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 5px #777;
+}
+#title h2 strong{  
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 100px;
+}
+#title h2::after{ /* h2와 p 사이 세로 선 */
+  content: "";
+  width: 1px;
+  height: 45px;
+  background-color: #ffffffd4;
+  display: block;
+  margin: 15px auto 5px auto;
+}
+#title p{
+  line-height: 1.4;
+  margin: 0 0 80px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+#title p::after{
+  content: "";
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  margin: 0px auto;
+  position: relative;
+  top: 30px;
+}
+#title button{
+  border: none;
+  width: 90px;
+  height: 50px;
+  background-color: #17a8ca80;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#title button:hover{ /* 버튼 색 변화 */
+  background-color: #00ff347a;
+}
+#title button::before{ /* 버튼 상단 삼각형 */
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 25px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 25px solid #17a8ca80;
+  border-left: 45px solid transparent;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  transition: all 0.5s;
+}
+#title button:hover::before{ /* 버튼 상단 삼각형 색변화 */
+   border-bottom: 25px solid #00ff347a;
+}
+#title button::after{ /* 버튼 하단 삼각형 */
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 25px solid #17a8ca80;
+  border-right: 45px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 45px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  transition: all 0.5s;
+}
+#title button:hover::after{ /* 버튼 하단 삼각형 색변화 */
+   border-top: 25px solid #00ff347a;
+}
